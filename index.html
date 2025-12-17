@@ -1,0 +1,103 @@
+<!DOCTYPE html><html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Apoie meu notebook</title>
+            <style>
+                body {
+                      margin: 0;
+                            min-height: 100vh;
+                                  display: flex;
+                                        align-items: center;
+                                              justify-content: center;
+                                                    background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+                                                          font-family: Arial, Helvetica, sans-serif;
+                                                                color: #ffffff;
+                                                                    }.container {
+                                                                      text-align: center;
+                                                                        max-width: 420px;
+                                                                          padding: 30px 20px;
+                                                                          }
+
+                                                                          h1 {
+                                                                            font-size: 1.8rem;
+                                                                              margin-bottom: 10px;
+                                                                              }
+
+                                                                              p {
+                                                                                font-size: 1rem;
+                                                                                  color: #cccccc;
+                                                                                    margin-bottom: 30px;
+                                                                                    }
+
+                                                                                    .btn {
+                                                                                      width: 100%;
+                                                                                        padding: 15px;
+                                                                                          margin-bottom: 15px;
+                                                                                            font-size: 1rem;
+                                                                                              font-weight: bold;
+                                                                                                border: none;
+                                                                                                  border-radius: 8px;
+                                                                                                    cursor: pointer;
+                                                                                                      transition: transform 0.2s ease, opacity 0.2s ease;
+                                                                                                      }
+
+                                                                                                      .btn:hover {
+                                                                                                        transform: scale(1.02);
+                                                                                                          opacity: 0.9;
+                                                                                                          }
+
+                                                                                                          .vakinha {
+                                                                                                            background: #00c853;
+                                                                                                              color: #0f0f0f;
+                                                                                                              }
+
+                                                                                                              .pix {
+                                                                                                                background: #333333;
+                                                                                                                  color: #ffffff;
+                                                                                                                    border: 1px solid #555555;
+                                                                                                                    }
+
+                                                                                                                    .pix-code {
+                                                                                                                      margin-top: 10px;
+                                                                                                                        font-size: 0.9rem;
+                                                                                                                          color: #aaaaaa;
+                                                                                                                            word-break: break-all;
+                                                                                                                            }
+
+                                                                                                                            .copied {
+                                                                                                                              color: #00c853;
+                                                                                                                                font-size: 0.9rem;
+                                                                                                                                  margin-top: 8px;
+                                                                                                                                    display: none;
+                                                                                                                                    }
+
+                                                                                                                                      </style>
+                                                                                                                                      </head>
+                                                                                                                                      <body>
+                                                                                                                                        <div class="container">
+                                                                                                                                            <h1>Me ajude a comprar um notebook</h1>
+                                                                                                                                                <p>Qualquer apoio faz diferença ❤️</p><button class="btn vakinha" onclick="window.location.href='https://www.vakinha.com.br/5697506?utm_campaign=share-sharemodal&utm_medium=share-bottom-link&utm_content=5697506&utm_source=socialshares-app-share'">
+                                                                                                                                                  Contribuir pela Vakinha
+                                                                                                                                                  </button>
+
+                                                                                                                                                  <button class="btn pix" onclick="copiarPix()">
+                                                                                                                                                    Copiar Pix para contribuir
+                                                                                                                                                    </button>
+
+                                                                                                                                                    <div class="pix-code" id="pixCode">5697506@vakinha.com.br</div>
+                                                                                                                                                    <div class="copied" id="copiedMsg">Pix copiado com sucesso!</div>
+
+                                                                                                                                                      </div>  <script>
+                                                                                                                                                          function copiarPix() {
+                                                                                                                                                                const pix = document.getElementById('pixCode').innerText;
+                                                                                                                                                                      navigator.clipboard.writeText(pix).then(() => {
+                                                                                                                                                                              const msg = document.getElementById('copiedMsg');
+                                                                                                                                                                                      msg.style.display = 'block';
+                                                                                                                                                                                              setTimeout(() => {
+                                                                                                                                                                                                        msg.style.display = 'none';
+                                                                                                                                                                                                                }, 2000);
+                                                                                                                                                                                                                      });
+                                                                                                                                                                                                                          }
+                                                                                                                                                                                                                            </script></body>
+                                                                                                                                                                                                                            </html>
